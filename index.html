@@ -77,9 +77,9 @@
   .tile{border-radius:var(--radius); position:relative; overflow:hidden; display:flex; align-items:flex-end; padding:16px; background-size:cover; background-position:center;}
   .tile::before{content:''; position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3)); z-index:1;}
   .tile span{position:relative; z-index:2; color:#fff; font-size:13px; font-weight:500; opacity:.92;}
-  .tile.a{background-image:url('Images/Pla-rad-prik-1.jpeg'); grid-row:1 / 3;}
-  .tile.b{background-image:url('Images/Satay2.jpeg');}
-  .tile.c{background-image:url('Images/KMG.jpeg');}
+  .tile.a{background-image:url('images/pla-rad-prik-1.jpeg'); grid-row:1 / 3;}
+  .tile.b{background-image:url('images/satay-2.jpeg');}
+  .tile.c{background-image:url('images/khao-mun-gai.jpeg');}
 
   /* ---------- Trust bar ---------- */
   .trustbar{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--cream-2);}
@@ -101,7 +101,8 @@
   .about .section-head h2{color:#fff;}
   .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
   .about p{font-size:17px; color:#DCE6DF; margin-bottom:16px; max-width:52ch;}
-  .about-photo{border-radius:var(--radius); background:linear-gradient(150deg,#2F6E60,#123028); height:320px; display:flex; align-items:center; justify-content:center;}
+  .about-photo{border-radius:var(--radius); background:linear-gradient(150deg,#2F6E60,#123028); height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  .about-photo img{width:100%; height:100%; object-fit:cover;}
   .about-photo svg{width:150px; height:150px; opacity:.85;}
 
   /* ---------- Menu ---------- */
@@ -232,7 +233,7 @@
 <section class="about" id="about">
   <div class="wrap about-grid">
     <div class="about-photo">
-      <svg viewBox="0 0 100 100" fill="none" stroke="#EFE9D8" stroke-width="2"><path d="M20 60c0-20 13-35 30-35s30 15 30 35"/><path d="M14 60h72"/><path d="M20 67c0 13 13 21 30 21s30-8 30-21"/></svg>
+      <img src="/images/dish-1.jpg" alt="Homey Thai restaurant interior">
     </div>
     <div>
       <div class="section-tag">Our story</div>
