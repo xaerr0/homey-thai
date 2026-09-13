@@ -1,0 +1,193 @@
+- generic [active] [ref=f44e1]:
+  - banner [ref=f44e2]:
+    - navigation [ref=f44e3]:
+      - generic [ref=f44e4]:
+        - emphasis [ref=f44e5]: Homey
+        - text: Thai Bistro
+      - button "Open menu" [ref=f44e6] [cursor=pointer]: ☰
+  - main [ref=f44e7]:
+    - generic [ref=f44e9]:
+      - generic [ref=f44e10]:
+        - generic [ref=f44e11]: Meadow Lane, Concord
+        - heading "Thai home cooking, made with care" [level=1] [ref=f44e15]
+        - paragraph [ref=f44e16]: Family-run since day one, serving scratch-made curries, noodles, and street-food favorites in a warm, unhurried dining room.
+        - generic [ref=f44e17]:
+          - link "Order online" [ref=f44e18] [cursor=pointer]:
+            - /url: https://online.skytab.com
+          - link "View the menu" [ref=f44e19] [cursor=pointer]:
+            - /url: "#menu"
+        - generic [ref=f44e20]:
+          - generic [ref=f44e21]: ★★★★★
+          - generic [ref=f44e22]: 4.7 rating from 200+ DoorDash orders, plus 257 reviews on Yelp
+      - generic [ref=f44e23]:
+        - generic [ref=f44e24]: Crispy Trout, whole fish with tamarind
+        - generic [ref=f44e26]: Satay skewers
+        - generic [ref=f44e28]: Khao Mun Gai, poached chicken & ginger rice
+    - generic [ref=f44e31]:
+      - generic [ref=f44e32]:
+        - generic [ref=f44e33]: 4.7 ★
+        - generic [ref=f44e34]: Average rating, DoorDash
+      - generic [ref=f44e35]:
+        - generic [ref=f44e36]: "257"
+        - generic [ref=f44e37]: Reviews on Yelp
+      - generic [ref=f44e38]:
+        - generic [ref=f44e39]: 100%
+        - generic [ref=f44e40]: Commission-free when you order direct
+    - generic [ref=f44e42]:
+      - img "Homey Thai restaurant interior" [ref=f44e44]
+      - generic [ref=f44e45]:
+        - generic [ref=f44e46]: Our story
+        - heading "Cooking the way we would for family" [level=2] [ref=f44e47]
+        - paragraph [ref=f44e48]: Every dish here starts with fresh herbs, house-made curry paste, and recipes passed down the way Thai home cooking has always been shared — table to table, not from a shortcut.
+        - paragraph [ref=f44e49]: "Guests keep coming back for the balance our regulars talk about most: sweet, sour, salty, and spicy, all in the same bite. Vegetarian and vegan diners are always welcome — just let your server know and the kitchen will adjust."
+        - link "Plan your visit" [ref=f44e50] [cursor=pointer]:
+          - /url: "#visit"
+    - generic [ref=f44e52]:
+      - generic [ref=f44e53]:
+        - generic [ref=f44e54]: The menu
+        - heading "House favorites" [level=2] [ref=f44e55]
+        - paragraph [ref=f44e56]: A short list of what guests order most — the full menu is available in the dining room and for online ordering.
+      - generic [ref=f44e57]:
+        - generic [ref=f44e58]:
+          - generic [ref=f44e59]:
+            - heading "To start" [level=3] [ref=f44e60]
+            - generic [ref=f44e61]:
+              - generic [ref=f44e62]:
+                - text: Satay chicken
+                - generic [ref=f44e63]: Grilled skewers, house peanut sauce
+              - generic [ref=f44e65]: $14.95
+            - generic [ref=f44e66]:
+              - generic [ref=f44e67]:
+                - text: Papaya salad
+                - generic [ref=f44e68]: Green papaya, lime, chili, peanuts
+              - generic [ref=f44e70]: $15.95
+            - generic [ref=f44e71]:
+              - generic [ref=f44e72]:
+                - text: Thai sausage
+                - generic [ref=f44e73]: Northern-style, served with rice
+              - generic [ref=f44e75]: $12.95
+            - generic [ref=f44e76]:
+              - generic [ref=f44e77]:
+                - text: Tom kha
+                - generic [ref=f44e78]: Coconut galangal soup
+              - generic [ref=f44e80]: $18.95
+          - generic [ref=f44e81]:
+            - heading "Curries" [level=3] [ref=f44e82]
+            - generic [ref=f44e83]:
+              - generic [ref=f44e84]:
+                - text: Green curry
+                - generic [ref=f44e85]: Thai eggplant, bamboo, basil
+              - generic [ref=f44e87]: $18.95
+            - generic [ref=f44e88]:
+              - generic [ref=f44e89]:
+                - text: Panang curry
+                - generic [ref=f44e90]: Rich peanut curry, kaffir lime
+              - generic [ref=f44e92]: $18.95
+            - generic [ref=f44e93]:
+              - generic [ref=f44e94]:
+                - text: Yellow curry
+                - generic [ref=f44e95]: Potato, onion, turmeric
+              - generic [ref=f44e97]: $18.95
+        - generic [ref=f44e98]:
+          - generic [ref=f44e99]:
+            - heading "Noodles & fried rice" [level=3] [ref=f44e100]
+            - generic [ref=f44e101]:
+              - generic [ref=f44e102]:
+                - text: Pad Thai
+                - generic [ref=f44e103]: Tamarind sauce, bean sprouts, peanuts
+              - generic [ref=f44e104]: $18.95
+            - generic [ref=f44e105]:
+              - generic [ref=f44e106]:
+                - text: Drunken noodle
+                - generic [ref=f44e107]: Wide rice noodles, holy basil
+              - generic [ref=f44e109]: $18.95
+            - generic [ref=f44e110]:
+              - generic [ref=f44e111]:
+                - text: Pad see ew
+                - generic [ref=f44e112]: Broccoli, egg, sweet soy
+              - generic [ref=f44e114]: $18.95
+            - generic [ref=f44e115]:
+              - generic [ref=f44e116]:
+                - text: Khao mun gai
+                - generic [ref=f44e117]: Poached chicken, ginger rice
+              - generic [ref=f44e119]: $19.95
+          - generic [ref=f44e120]:
+            - heading "House specials" [level=3] [ref=f44e121]
+            - generic [ref=f44e122]:
+              - generic [ref=f44e123]:
+                - text: Crispy trout
+                - generic [ref=f44e124]: Whole fish, tamarind sauce
+              - generic [ref=f44e126]: $32.95
+            - generic [ref=f44e127]:
+              - generic [ref=f44e128]:
+                - text: Thai basil (ka pow)
+                - generic [ref=f44e129]: Choice of protein, chili basil
+              - generic [ref=f44e131]: $18.95
+            - generic [ref=f44e132]:
+              - generic [ref=f44e133]:
+                - text: Mango sticky rice
+                - generic [ref=f44e134]: Seasonal, while it lasts
+              - generic [ref=f44e136]: Market
+      - paragraph [ref=f44e137]: Spice levels available on request. Ask your server about daily specials.
+    - generic [ref=f44e139]:
+      - generic [ref=f44e140]:
+        - generic [ref=f44e141]: What guests say
+        - heading "Loved by regulars and first-timers alike" [level=2] [ref=f44e142]
+      - generic [ref=f44e143]:
+        - generic [ref=f44e144]:
+          - generic [ref=f44e145]: ★★★★★
+          - paragraph [ref=f44e146]: Out-of-town guests said it was the best Thai takeout they'd ever had — and it's become our regular order since.
+          - generic [ref=f44e147]: DoorDash review
+        - generic [ref=f44e148]:
+          - generic [ref=f44e149]: ★★★★★
+          - paragraph [ref=f44e150]: Friendly, attentive service and a clean, fresh dining room. The roti and curries were outstanding from the first bite.
+          - generic [ref=f44e151]: Yelp review
+        - generic [ref=f44e152]:
+          - generic [ref=f44e153]: ★★★★★
+          - paragraph [ref=f44e154]: Consistently great after half a dozen visits — the staff always checks with the kitchen to keep vegan orders accurate.
+          - generic [ref=f44e155]: HappyCow review
+    - generic [ref=f44e157]:
+      - generic [ref=f44e158]:
+        - generic [ref=f44e159]: Visit us
+        - heading "Find us in Concord" [level=2] [ref=f44e160]
+        - generic [ref=f44e165]:
+          - generic [ref=f44e166]: Address
+          - generic [ref=f44e167]: 1140 Meadow Ln, Ste A, Concord, CA 94520
+        - generic [ref=f44e171]:
+          - generic [ref=f44e172]: Phone
+          - generic [ref=f44e173]: (925) 889-2224
+        - generic [ref=f44e178]:
+          - generic [ref=f44e179]: Hours
+          - generic [ref=f44e180]: "Tue–Sun: 11:30am–3pm & 4:30pm–9pm"
+          - generic [ref=f44e181]: Closed Mondays
+        - iframe [ref=f44e182]
+      - generic [ref=f44e183]:
+        - heading "Order or reserve" [level=3] [ref=f44e184]
+        - paragraph [ref=f44e185]: Order pickup or delivery directly — no third-party fees — or reserve a table for tonight.
+        - link "Order online" [ref=f44e186] [cursor=pointer]:
+          - /url: https://online.skytab.com
+        - link "Call to reserve" [ref=f44e187] [cursor=pointer]:
+          - /url: tel:+19258892224
+        - generic [ref=f44e188]: Direct orders placed here support the restaurant more than orders through delivery apps.
+  - contentinfo [ref=f44e189]:
+    - generic [ref=f44e190]:
+      - generic [ref=f44e191]:
+        - generic [ref=f44e192]:
+          - generic [ref=f44e193]:
+            - emphasis [ref=f44e194]: Homey
+            - text: Thai Bistro
+          - paragraph [ref=f44e195]: 1140 Meadow Ln, Ste A, Concord, CA 94520
+        - list [ref=f44e196]:
+          - listitem [ref=f44e197]:
+            - link "Menu" [ref=f44e198] [cursor=pointer]:
+              - /url: "#menu"
+          - listitem [ref=f44e199]:
+            - link "Our story" [ref=f44e200] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=f44e201]:
+            - link "Reviews" [ref=f44e202] [cursor=pointer]:
+              - /url: "#reviews"
+          - listitem [ref=f44e203]:
+            - link "Visit" [ref=f44e204] [cursor=pointer]:
+              - /url: "#visit"
+      - generic [ref=f44e205]: © 2026 Homey Thai Bistro. Mock-up design — not the live site.

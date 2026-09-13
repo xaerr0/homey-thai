@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Homey Thai Bistro — Concord, CA</title>
+<meta name="description" content="Family-run Thai restaurant in Concord, CA serving scratch-made curries, noodles, and street-food favorites. Order pickup, delivery, or reserve a table.">
+<meta name="theme-color" content="#1E4B43">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E4B43'/%3E%3Cpath d='M10 21c0-6 4-11 9-13-3 5-3 10 0 15-2 2-6 2-9-2z' fill='%23C9932E'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +19,7 @@
     --jade:#1E4B43;
     --jade-dark:#153933;
     --gold:#C9932E;
-    --gold-dark:#9C7220;
+    --gold-dark:#8A6519;
     --chili:#A3321F;
     --line:#DED2B8;
     --radius:14px;
@@ -42,7 +45,8 @@
     backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
-  nav{display:flex; align-items:center; justify-content:space-between; padding:16px 28px; max-width:1120px; margin:0 auto;}
+  nav{position:relative; display:flex; align-items:center; justify-content:space-between; padding:16px 28px; max-width:1120px; margin:0 auto;}
+  .mobile-menu{display:contents;}
   .wordmark{font-family:'Instrument Serif', serif; font-size:26px; color:var(--jade-dark); display:flex; align-items:baseline; gap:6px;}
   .wordmark em{font-style:italic; color:var(--gold-dark);}
   .navlinks{display:flex; gap:30px; font-size:15px; font-weight:500; list-style:none;}
@@ -59,7 +63,7 @@
   .btn-primary:hover{background:var(--jade-dark);}
   .btn-outline{background:transparent; border-color:var(--jade); color:var(--jade-dark);}
   .btn-outline:hover{background:var(--jade); color:var(--cream);}
-  .menu-toggle{display:none; background:none; border:none; font-size:26px; color:var(--jade-dark); cursor:pointer; padding:8px 4px;}
+  .menu-toggle{display:none; align-items:center; justify-content:center; width:44px; height:44px; background:none; border:none; font-size:24px; color:var(--jade-dark); cursor:pointer;}
 
   /* ---------- Hero ---------- */
   .hero{padding:64px 0 40px;}
@@ -67,7 +71,6 @@
   .eyebrow-line{display:flex; align-items:center; gap:10px; margin-bottom:18px; color:var(--gold-dark); font-size:14px; font-weight:600; letter-spacing:.02em;}
   .eyebrow-line svg{width:16px; height:16px;}
   .hero h1{font-size:64px; margin-bottom:20px;}
-  .hero h1 em{font-style:italic; color:var(--gold-dark);}
   .hero p.lede{font-size:18px; color:var(--ink-soft); max-width:44ch; margin-bottom:30px;}
   .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:28px;}
   .hero-rating{display:flex; align-items:center; gap:14px; font-size:14px; color:var(--ink-soft);}
@@ -98,7 +101,7 @@
   /* ---------- About ---------- */
   .about{background:var(--jade); color:#EFE9D8;}
   .about .section-tag{color:#D9C88F;}
-  .about .section-head h2{color:#fff;}
+  .about h2{color:#fff;}
   .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
   .about p{font-size:17px; color:#DCE6DF; margin-bottom:16px; max-width:52ch;}
   .about-photo{border-radius:var(--radius); background:linear-gradient(150deg,#2F6E60,#123028); height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden;}
@@ -118,6 +121,7 @@
 
   /* ---------- Reviews ---------- */
   .reviews{background:var(--cream-2);}
+  .reviews .section-tag{color:#825F16;}
   .review-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
   .review-card{background:var(--cream); border:1px solid var(--line); border-radius:var(--radius); padding:26px;}
   .review-card .stars{display:block; margin-bottom:12px;}
@@ -160,13 +164,13 @@
     .trust-grid div + div{border-left:none; border-top:1px solid var(--line); padding-top:14px;}
     .hero h1{font-size:42px;}
     .section-head h2{font-size:30px;}
-    .navlinks{display:none; position:fixed; top:58px; left:0; right:0; background:#FAF3E6; flex-direction:column; gap:0; padding:16px 28px; z-index:40; border-bottom:1px solid var(--line);}
-    .navlinks.active{display:flex;}
+    .mobile-menu{display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; background:#FAF3E6; z-index:40; border-bottom:1px solid var(--line); max-height:calc(100vh - 100%); overflow-y:auto;}
+    .mobile-menu.active{display:flex;}
+    .navlinks{flex-direction:column; gap:0; padding:16px 28px 0;}
     .navlinks a{padding:12px 0; display:block;}
-    .navcta{display:none; position:fixed; top:216px; left:0; right:0; flex-direction:column; gap:10px; padding:16px 28px; background:#FAF3E6; z-index:40;}
-    .navcta.active{display:flex;}
+    .navcta{flex-direction:column; gap:10px; padding:16px 28px;}
     .navcta .btn{width:100%; text-align:center;}
-    .menu-toggle{display:block;}
+    .menu-toggle{display:flex;}
     .collage{height:300px;}
   }
 </style>
@@ -176,28 +180,32 @@
 <header>
   <nav>
     <div class="wordmark"><em>Homey</em>&nbsp;Thai Bistro</div>
-    <ul class="navlinks">
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#about">Our story</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#visit">Visit</a></li>
-    </ul>
-    <div class="navcta">
-      <a class="btn btn-outline" href="#visit">Reserve a table</a>
-      <a class="btn btn-primary" href="https://online.skytab.com" target="_blank" rel="noopener">Order now</a>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="navlinks">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">Our story</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <div class="navcta">
+        <a class="btn btn-outline" href="#visit">Reserve a table</a>
+        <a class="btn btn-primary" href="https://online.skytab.com" target="_blank" rel="noopener">Order now</a>
+      </div>
     </div>
-    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">&#9776;</button>
   </nav>
 </header>
+
+<main>
 
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow-line">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
-        CONCORD, CALIFORNIA
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.5 7-12a7 7 0 10-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Meadow Lane, Concord
       </div>
-      <h1>Thai home cooking, <em>made with care</em></h1>
+      <h1>Thai home cooking, made with care</h1>
       <p class="lede">Family-run since day one, serving scratch-made curries, noodles, and street-food favorites in a warm, unhurried dining room.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://online.skytab.com" target="_blank" rel="noopener">Order online</a>
@@ -205,7 +213,7 @@
       </div>
       <div class="hero-rating">
         <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span>4.7 rating from 200+ DoorDash orders &middot; 257 Yelp reviews</span>
+        <span>4.7 rating from 200+ DoorDash orders, plus 257 reviews on Yelp</span>
       </div>
     </div>
     <div class="collage">
@@ -233,7 +241,7 @@
 <section class="about" id="about">
   <div class="wrap about-grid">
     <div class="about-photo">
-      <img src="/images/dish-1.jpg" alt="Homey Thai restaurant interior">
+      <img src="images/dish-1.jpg" alt="Homey Thai restaurant interior" loading="lazy">
     </div>
     <div>
       <div class="section-tag">Our story</div>
@@ -335,7 +343,7 @@
           <div class="val" style="font-weight:400; color:var(--ink-soft); font-size:13.5px;">Closed Mondays</div>
         </div>
       </div>
-      <iframe src="https://www.google.com/maps?q=1140+Meadow+Ln+Ste+A+Concord+CA+94520&output=embed" width="100%" height="300" style="border:0; border-radius:var(--radius);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe title="Map showing Homey Thai Bistro's location at 1140 Meadow Ln, Ste A, Concord, CA" src="https://www.google.com/maps?q=1140+Meadow+Ln+Ste+A+Concord+CA+94520&output=embed" width="100%" height="300" style="border:0; border-radius:var(--radius);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="order-panel">
       <h3>Order or reserve</h3>
@@ -346,6 +354,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
@@ -366,15 +376,21 @@
 </footer>
 
 <script>
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-  document.querySelector('.navlinks').classList.toggle('active');
-  document.querySelector('.navcta').classList.toggle('active');
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+function setMenuOpen(open) {
+  mobileMenu.classList.toggle('active', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  menuToggle.innerHTML = open ? '&#10005;' : '&#9776;';
+}
+
+menuToggle.addEventListener('click', () => {
+  setMenuOpen(!mobileMenu.classList.contains('active'));
 });
 document.querySelectorAll('.navlinks a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.navlinks').classList.remove('active');
-    document.querySelector('.navcta').classList.remove('active');
-  });
+  link.addEventListener('click', () => setMenuOpen(false));
 });
 </script>
 
